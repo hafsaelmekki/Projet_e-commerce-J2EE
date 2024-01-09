@@ -5,6 +5,8 @@
     <title>Ma Boutique Vintage</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57P+QmMa+zafJ0pBVIK9PCp8TiVUJjz8dpTZNaglDpIkL6N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
 </head>
 <body>
     <div id="banner">
