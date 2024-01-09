@@ -1,0 +1,159 @@
+/* style.css */
+
+/* En-tête et navigation */
+.header {
+    text-align: center;
+}
+
+.navbar {
+    padding: 10px;
+    background-color: #ff80ff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.nav-link {
+    display: inline-block;
+    margin: 0 0px;
+}
+
+.nav-link,
+.footer {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.btn-nav {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.btn-nav:hover {
+    background-color: #0056b3;
+}
+
+/* style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+#banner {
+    background-color: #9b5de5; /* Couleur de fond violet doux */
+    padding: 10px 0; /* Padding vertical pour plus d'espace */
+    text-align: center; /* Centre le titre "ma boutique" */
+}
+
+#banner h1 {
+    font-family: 'Lobster', cursive; /* Utilisez une police comme Roboto pour plus de caractère */
+    color: white;
+    font-size: 3em; /* Agrandir la taille de la police */
+    letter-spacing: 2px; /* Espacement entre les lettres */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre portée pour donner de la profondeur */
+    margin: 0; /* Assurez-vous qu'il n'y a pas de marge externe */
+    padding: 10px 20px; /* Padding interne pour "ma boutique" */
+}
+
+/* Personnalisation du menu */
+#menu {
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+    background-color: #FFF;
+    margin : 0;
+}
+
+#menu a {
+    background-color: white; /* Fond blanc pour les boutons */
+    color: #333; /* Couleur du texte pour les boutons */
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s; /* Animation de transition pour le changement de couleur */
+}
+
+#menu a:hover, #menu a:focus {
+    background-color:#FFF ; /* Un rose vif pour le survol ou le focus */
+    color: #f15bb5;
+}
+/* Ajout des icônes avant les liens du menu */
+#menu a:before {
+    font-family: "Font Awesome 5 Free"; /* FontAwesome */
+    margin-right: 8px;
+    font-weight: 900;
+}
+
+#menu a[href="index.jsp"]:before {
+    content: "\f015"; /* Icône 'home' */
+}
+
+#menu a[href$="CatalogueServlet?action=voirCategories"]:before {
+    content: "\f02d"; /* Icône 'book' */
+}
+
+#menu a[href="panier.jsp"]:before {
+    content: "\f07a"; /* Icône 'shopping-cart' */
+}
+
+#content {
+	margin : 0;
+}
+
+/* Personnalisation du footer */
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px 0;
+}
+/* Améliorer le fond général de la page */
+body {
+    background-color: #f4f4f4; /* Couleur de fond douce pour la page */
+    font-family: Arial, sans-serif;
+}
+
+/* INDEX CSS */
+.background-image {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Ou la hauteur que vous souhaitez pour votre image de fond */
+    background-image: url('img.jpg'); /* Remplacez par le chemin de votre image */
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Assombrissement avec opacité */
+    z-index: 1; /* Assurez-vous que l'overlay est au-dessus de l'image mais en dessous du texte */
+}
+
+.welcome-text {
+	font-family: 'Lobster', cursive;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Assurez-vous que le texte est lisible sur l'image de fond */
+    text-align: center;
+    z-index: 2; /* Assurez-vous que le texte est au-dessus de l'overlay */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Pour éviter toute barre de défilement horizontale due à l'overflow */
+}
