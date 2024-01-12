@@ -23,8 +23,12 @@ public class Client {
     @Column(name = "adresse", length = 250)
     private String adresse;
 
+    @Column(name = "mot_de_passe", nullable = false)
+    private String motDePasse;
+
     @OneToMany(mappedBy = "client")
     private List<CommandeClient> commandes;
+
 
 	public int getId() {
 		return id;
@@ -73,6 +77,14 @@ public class Client {
 	public void setCommandes(List<CommandeClient> commandes) {
 		this.commandes = commandes;
 	}
+	
+    public String getMotDePasse() {
+        return motDePasse;
+    }
+
+    public void setMotDePasse(String motDePasse) {
+        this.motDePasse = motDePasse;
+    }
 
     // Getters et setters
     // ...

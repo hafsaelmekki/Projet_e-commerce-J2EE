@@ -30,7 +30,7 @@
         <p>Votre panier est vide.</p>
     </c:if>
 
-    <form action="CommandeServlet" method="post" class="text-center my-3">
+    <form action="OrderServlet" method="post" class="text-center my-3">
         <input type="submit" class="btn btn-primary" value="Valider la commande">
     </form>
 </div>
