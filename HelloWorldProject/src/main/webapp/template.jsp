@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57P+QmMa+zafJ0pBVIK9PCp8TiVUJjz8dpTZNaglDpIkL6N" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    
 </head>
 <body>
     <div id="banner">
@@ -16,10 +15,16 @@
         <a href="index.jsp">Accueil</a>
         <a href="${pageContext.request.contextPath}/CatalogueServlet?action=voirCategories">Catalogues</a>
         <a href="panier.jsp">Votre Panier</a>
+        <% if (session.getAttribute("client") == null) { %>
+            <a href="login.jsp">Connexion</a>
+            <a href="enregistrement.jsp">Inscription</a>
+        <% } else { %>
+            <a class="status-indicator bg-success"></span> Déconnexion
+        <% } %>
     </div>
     <div id="content">
-   		 <jsp:include page="${pageContent}" />
-	</div>
+        <jsp:include page="${pageContent}" />
+    </div>
     <div id="footer">
         <p>&copy; 2024 Ma Boutique Vintage</p>
     </div>

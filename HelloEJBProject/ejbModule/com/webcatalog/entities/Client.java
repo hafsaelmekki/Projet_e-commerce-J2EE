@@ -1,12 +1,14 @@
 package com.webcatalog.entities;
 
 import javax.persistence.*;
+
+import java.io.Serializable;
 import java.util.List;
 
 @Entity
 @Table(name = "Client")
-public class Client {
-
+public class Client implements Serializable {
+	private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
