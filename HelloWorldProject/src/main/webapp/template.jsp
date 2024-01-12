@@ -19,8 +19,11 @@
             <a href="login.jsp">Connexion</a>
             <a href="enregistrement.jsp">Inscription</a>
         <% } else { %>
-            <a class="status-indicator bg-success"></span> Déconnexion
-        <% } %>
+            
+    <a href="LogoutServlet">Déconnexion</a>
+    <span class="status-indicator bg-success"></span> 
+    <a >Connecté</a>
+<% } %>
     </div>
     <div id="content">
         <jsp:include page="${pageContent}" />

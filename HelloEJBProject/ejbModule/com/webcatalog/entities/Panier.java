@@ -1,10 +1,13 @@
 package com.webcatalog.entities;
 
+import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.Map;
 
-public class Panier {
+public class Panier implements Serializable {
+	
+	private static final long serialVersionUID = 1L;
     private Map<Integer, Integer> articles; // Key is product ID, value is quantity
     private Map<Integer, Produit> detailsProduits; // Key is product ID, value is the Product object
 

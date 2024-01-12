@@ -8,4 +8,5 @@ import javax.ejb.Remote;
 @Remote
 public interface gestionCommandeBeanRemote {
     CommandeClient createAndPersistOrder(Panier panier, String email);
+    
 }

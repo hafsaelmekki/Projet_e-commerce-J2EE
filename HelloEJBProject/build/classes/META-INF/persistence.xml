@@ -4,6 +4,9 @@
  <jta-data-source>java:/HelloDS</jta-data-source>
  <class>com.webcatalog.entities.CommandeClient</class>
  <class>com.webcatalog.entities.ProduitCommande</class>
+ <class>com.webcatalog.entities.Client</class>
+ <class>com.webcatalog.entities.Produit</class>
+ <class>com.webcatalog.entities.Categorie</class>
  <properties>
  <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5Dialect"/>
  <property name="hibernate.hbm2ddl.auto" value="update"/>

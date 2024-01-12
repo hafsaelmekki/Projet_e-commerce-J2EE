@@ -18,5 +18,5 @@
         </div>
         <button type="submit" class="btn btn-primary">Se connecter</button>
     </form>
-    <p>Pas encore inscrit ? <a href="register.jsp">Créer un compte</a></p>
+    <p>Pas encore inscrit ? <a href="enregistrement.jsp">Créer un compte</a></p>
 </div>

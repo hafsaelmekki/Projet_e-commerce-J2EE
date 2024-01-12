@@ -1,4 +1,5 @@
 package com.webcatalog.entities;
+import java.sql.Timestamp;
 
 import javax.persistence.*;
 
